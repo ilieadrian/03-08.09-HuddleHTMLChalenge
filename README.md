@@ -1,67 +1,45 @@
-Ce este acest site?
-Este primul meu site creat in afara tutorialelor, provocare de la freecodementor.co (vezi footer pentru mai multe detalii). Primul site creat de la 0 in HTML, CSS + SASS.
+What is this?
+It's my first site created without tutorials. Challenge provided from freecodementor.co (see footer for more details). The first site created from 0 in HTML, CSS + SASS.
 
-Live version: 
+Live version: https://blissful-hoover-5ea1c6.netlify.com/
 
-
-Fonturi. href @index.html 
+Fonts added in index.html
 Body: Open Sans 400, 700.
 H: Poppins 400,700.
 
 Images: Provided from freecodementor. See "/images".
-svg file modified locali with Notepad ++, atributele culoare au fost setate la "#fff;
-Resposive? 
-Da. Fata de provocarea freecodementor mi-am luat libertatea de a adapta versiunea responsive. Descriere mod resposive:
+svg file modified localy with Notepad ++, the color attributes have been set to "#fff;
 
+Resposives? 
+Fully responsive. Compared to the challenge, i took the liberty to adapt the responsive version.
 
+Response mode flow:
+@940px: 
+- Main logo goes to center;
+- Headings decrease in size to 3.5 rem;
+- The footer turns into a flex from grid. All elements are centered.
+- Padding 2 rem top/bottom added to replace grid-gap.
 
-Bug-uri cunoscute: 
-- Pe firefox placeholderul nu se alinieaza corect in campul email. La click se decaleaza.
-- Logoul din footer nu se alinieaza cu butoanele de social media.
+@600px:
+- The form goes to flex-direction: column:
+- The menu items (links) are now in column. 
+- I added a 1px border dotted $ primary-color and some padding + larger font size for readability.
+- Changed the order of the items in footer. The menu is first, then the logo, social links and the copyright.
+- The "Register" button drops below the email field and they are the same size now. I remove the margin from the button.
 
+@450px:
+- I decreased padding between sections.
+- I decreased by 10 rem the width of the email field and the "Register" button.
+  
+Other:
+I added "transition: all 0.5s ease-out" at hover for links and social buttons.
 
+Known bugs:
+On firefox placeholder does not align properly in the email field. On clicks is offset.
+- The footer logo does not align with the social media buttons.
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@#####@@@@@@@@@@@@@#@@@@@@@@@@@@@@@###@@@@@@@@@@@@@@@@@#######@
-###@@@@@@@@@@#############################@@@@@@###########@@@@@@@@@############
-###@#######@###############@@##########@################@@@@@@@###@####@#####@@@
-############@###@@@@@@@#####@..+@@@+`    @@########@@@#####@##@@###@@@##########
-#######@#####@@@#######@@@;                      ;;;;;;';'';;;;@@@######@+  ;@@@
-@####@:                                          '';#########+;;    ``          
-                             `,:''               ;;;#########+;@                
-            @@@@@@@@@@@@@@@@@@@@@@               ;;;##@######';#                
-            @                  @@@               ';;####@####;;@                
-      @`    @        `      `  @@@               ;;;######@##''@                
-     @@@    @     #@@       @;::@@               ;;;#########;'@          @     
-    @@@@@   @   #@@@.   @  @:::;+@@:'`           ;;;#####@##@;;@          @@:   
-   @@@@@@   @  @@@@@    @@  ;@@@@;::;`           ;';''''''+#;;;.          .@@`  
-  @@@@@@#   @ @@@@@@   @@@@::::::::#+;;;@        #;;;;;;;;;;;;@            @@@  
-  @@@@@@@   @@@@,@@@  ;@@@@@:::;+@;;::::@'#.                              ,@@@  
-@.@@@,@@@   @@@,,:@@@ @@:,@@ @;;:+#;;:+  @@@@                   '         @@@@`@
-@@@@@,@@@ ' @@@,,,@@@@@@,,,@@@;+ .. @;@ @@@@+                 @@         @@@@@@@
-@@@@@,@@  @+'@,,,,,@@@@,,@@@@@: '@@@ @+` @@@@#@@@@@@+       ;@@#        @@@:@@@@
-@@@@@,@@  @@#,,,,,,,:@,,@@@@@@: @@@@ #:;+::::;@@@@@@@      @@#@@       @@@,,@@@@
-,@@@@,@@  @@@:,,,,,,,,,@@@@@@@;+   `@;;:;::::;;@@@@@     `@@,'@@+     #@@#,,+@@,
-,,@@,,@@ ,@@@@,,,,,,,,:@@@@@@:::::::::;+##:;;;;::++ ,   @@@,@++++++#@ @@@:,,,@,,
-,,,,,@@+ @@@@@,,,,,,,+''@@@#;;:::::;:;:::;@  ..`   @@  @@@,,@,;@@@+,@.,@@,,,,,,,
-,,,,,@@@ @@@@@,,,,,,:+''@'@;::;;:;;:::::::@       @@@ @#@,,,#,......@,,         
-,,,,,@@@#@@@@@,,,,,,,'''@'@;;;@;@;::::::;;'@     .@@@@#@,,  @,......@'          
-,,,,,'@@@@@,@@,,,,,::+''@'@;;;+;@;:::::::;;'     '@@:@@;    @:....,.@           
-,,,,,,@@@@@,@@::::::,@''@''';;:+;#:::;:::;+:,    :@@,,@,,                       
-,,,,,,:@@@,,@@:::::::@''''+@';;;#;'@@@@@'#:#@#   `@@:,,,,,,,,,,.,,,,,,,,,,,,,,,,
-,,,,,,,+@,,,@@;;;;'',:@''''''@#;;;;;#@;;@''#:; , `@@+,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,@,,,:,,:@@::::,,::::@''''''''''''@;::#@@;:;;@.@@#,,,,,,,,,,,.,,@@,,,,,,,,,,@
-,,,,;,,,,,,:@@::::@@,:::,@@@####@@@@@@;:;;#@#@@  @@@,,,,,,,,@@@@##@@@########@@@
-,,,,:,,,,,,,@@'::@@@:::::::#''+++++@@@##@@@@@@@#@@@@,,,@@,,,@@@@@@@@@#######@@@@
-,,,,,,,,,,,,@@@,@@@@@:,::::+''+::,,@@@'':+@@@:::@@,,;@:@,,,,@@@@@@@@@######@@@@:
-,,;,,+,,,,,,,@@@@@'@@,:,@,,,''+::::@@@'':'@@@::,:::::,@#+:,#@@@@@@@@#####@@@@@+,
-,,+,,@,,#,@,,,@@@@,@@@,@@:::''+:::,@@@''::@@@::::::::::::@@@#@+,@@@@####@@@@@@,,
-,,,,,;,,:,,,,,,@@@,,@@@@@:::'''::::@@@'',:@@@:::::::,::#@@@@@,,,@@@@##@@@@@@@,,,
-,,,,,,',,#,;,,,,:@,,,#@@@:::#@:::::,:@''::@@,::::::::;@@@@@;,,,,@@@@@@@@@@@:,,,,
-,,,,,,,,,,,,,,,,,,,,,,,@##:,,::::::::,::::::::::::::,@@@#@:,,,,,:@@@@@@@@,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,'@:::::::::::,::::::::::::::,@@@@@@,,,,,,,,'@@@@,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,:@::::::::::::::::::::::::::::,@@@@@,,,,,,,,,,,;#,,,,,,,,,,
+Other bugs:
+<insert 'this is fine meme here'>
 
 
 ---- frontendmentor.co instructions bellow ----

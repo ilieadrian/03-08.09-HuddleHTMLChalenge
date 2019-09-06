@@ -213,7 +213,7 @@ footer {
     .nav ul li {
       padding: 1rem 0;
       text-transform: uppercase;
-      font: 2rem;
+      font-size: 2rem;
       justify-content: center;
       align-items: center;
       display: inline-block;
