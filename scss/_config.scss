@@ -1,0 +1,9 @@
+$primary-color: hsl(322, 100%, 66%);
+$dark-color: hsl(192, 100%, 9%);
+$light-color: hsl(208, 11%, 55%);
+$mobile-width: 375px;
+$desktop-width: 1080px;
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}

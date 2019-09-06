@@ -1,0 +1,118 @@
+@media screen and (max-width: 940px) {
+    nav {
+        justify-content: center;
+    }
+
+    .lg-heading {
+        font-size: 3.5rem;
+    }
+
+    .md-heading {
+        font-size: 3.5rem;
+    }
+
+    #main-footer {
+        .footer-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+
+            .footer-logo {
+                justify-items: center;
+                justify-content: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+    }
+
+    .footer-wrapper>* {
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lg-btn {
+        width: 40rem;
+        margin: 1rem 0;
+    }
+
+    #main-footer {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .nav {
+        ul {
+            flex-direction: column;
+
+            li {
+                padding: 1rem 0;
+                text-transform: uppercase;
+                font: 2rem;
+                justify-content: center;
+                align-items: center;
+                display: inline-block;
+                widows: 100%;
+            }
+
+            li>* {
+                border-bottom: 1px dotted $primary-color;
+                width: 26rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            a {
+                padding-bottom: 1rem;
+            }
+
+        }
+    }
+
+    .footer-logo {
+        order: 2;
+    }
+
+    .social-icons {
+        order: 3;
+    }
+
+    .attribution {
+        order: 4;
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero {
+        padding: 5rem 0 0 0;
+    }
+
+    .newsletter {
+        padding: 5rem 0 0 0;
+
+        form {
+            input[type='email'] {
+                width: 30rem;
+            }
+        }
+
+
+    }
+
+    .lg-btn {
+        width: 30rem;
+    }
+
+}
