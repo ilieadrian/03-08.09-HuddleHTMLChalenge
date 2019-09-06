@@ -1,7 +1,7 @@
 What is this?
 It's my first site created without tutorials. Challenge provided from freecodementor.co (see footer for more details). The first site created from 0 in HTML, CSS + SASS.
 
-Live version: https://blissful-hoover-5ea1c6.netlify.com/
+Live version: huddleia.netlify.com
 
 Fonts added in index.html
 Body: Open Sans 400, 700.
